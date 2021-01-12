@@ -1,5 +1,4 @@
  Ffuf
-
 | **Command**   | **Description**   |
 | --------------|-------------------|
 | `ffuf -h` | ffuf help |
