@@ -17,6 +17,11 @@
 | **Command**   | **Description**   |
 | --------------|-------------------|
 | `/opt/useful/SecLists/Discovery/Web-Content/directory-list-2.3-small.txt` | Directory/Page Wordlist |
+| `/parameter_search/Arjun/db | parameter |
+| `/boom_ dictionary/fuzz_payload/tomcat/tomcat.txt | tomcat/page wordlist |
+| `/boom_ dictionary/fuzz_payload/xss/xss_easy.txt | xss / easy_payload |
+
+
 
 # Misc
 
