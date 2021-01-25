@@ -7,7 +7,7 @@
 -通过HTML注入提取令牌 
 -从非格式“Content Type:application/json”或“Content Type:application/x-url-encoded”切换到“Content Type:Form multipart” 
 -绕过正则表达式  
-如果网站正在寻找“银行网站“在referer URL中，也许”bank.com.攻击者.com“或”http://www.com/bank.cn.com”将起作用。
+-如果网站正在寻找“银行网站“在referer URL中，也许”bank.com.攻击者.com“或”http://www.com/bank.cn.com”将起作用。
 -删除referer头（将此<meta name=“referer”content=“no referer”>添加到有效负载或html代码中）
 
 
