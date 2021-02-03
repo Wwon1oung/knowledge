@@ -1,5 +1,5 @@
 # 403 Forbidden Bypass
-
+use burp插件403bypass
 1. 使用“ X-Original-URL”标题 header
 ```
 GET /admin HTTP/1.1

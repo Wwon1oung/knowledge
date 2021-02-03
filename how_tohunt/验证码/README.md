@@ -1,4 +1,5 @@
 ## 绕过验证码
+burp插件：captcha-killer
 1.尝试更改请求方法，例如POST到GET
 ```
 POST / HTTP 1.1
@@ -10,7 +11,7 @@ _RequestVerificationToken = xxxxxxxxxxxxxx＆_Username = daffa＆_Password = tes
 
 将方法更改为GET
 ```
-GET /？_ RequestVerificationToken = xxxxxxxxxxxxxx＆_Username = daffa＆_Password = test123 HTTP 1.1
+GET /?_RequestVerificationToken = xxxxxxxxxxxxxx＆_Username = daffa＆_Password = test123 HTTP 1.1
 Host：target.com
 [...]
 ```

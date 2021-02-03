@@ -1,7 +1,11 @@
-### how_tohunt:<br>
-从github上收集到的项目<br>
+# 常用的知识和命令 
+
+-------
+
+### how_tohunt:
+```
+从github上收集到的项目
 follow:
-<br>
 daffainfo/AllAboutBugBounty
-<br>
 KathanP19/HowToHunt
+```
